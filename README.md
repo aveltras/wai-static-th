@@ -23,10 +23,7 @@ mkStaticApp "src"
 
 main :: IO ()
 main = do
-
   print $ network_wai_static_th_hs -- Network/Wai/Static/TH-b852dc8617e5f58f8b9c0724ba2e8455.hs
-
   let reloadOnChange = False
-
   run 3000 $ staticApp reloadOnChange
 ~~~

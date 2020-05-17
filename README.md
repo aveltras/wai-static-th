@@ -6,7 +6,7 @@ Simple Template Haskell helper to manage your WAI application static assets.
 
 Call **mkStaticApp** passing the path to your assets directory relative to cabal file location.  
 
-This will generate a function **staticApp** which takes a Bool indicating whether your files should be reloaded when they change. This should be **False** in development and **True** in production.
+This will generate a function **staticApp** which takes a Bool indicating whether your files should be reloaded when they change. This should be **True** in development and **False** in production.
 
 Functions returning the hashed names are also generated (see example below).
 

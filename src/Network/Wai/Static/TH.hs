@@ -2,7 +2,9 @@
 {-# LANGUAGE RecordWildCards #-}
 {-# LANGUAGE TemplateHaskell #-}
 
-module Network.Wai.Static.TH where
+module Network.Wai.Static.TH
+  ( mkStaticApp
+  ) where
 
 import           Control.Monad              (forM)
 import           Crypto.Hash                (Digest, MD5, hash)
